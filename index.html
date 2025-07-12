@@ -170,6 +170,81 @@
             line-height: 1.8;
         }
         
+        .cover-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .medical-decoration {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+        }
+        
+        .main-title {
+            font-size: 4rem !important;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 1.8rem;
+            color: #4a5568;
+            font-weight: 300;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        
+        .author-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .author-label {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .author-name {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #2d3748;
+            letter-spacing: 0.5px;
+        }
+        
+        .intro-description {
+            font-size: 1.3rem;
+            color: #4a5568;
+            line-height: 1.7;
+            margin: 30px 0;
+        }
+        
+        .decorative-line {
+            width: 200px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 30px auto 0;
+            border-radius: 2px;
+        }
+        
         .highlight {
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
@@ -281,6 +356,27 @@
             .position-image {
                 max-height: 300px;
             }
+            
+            .main-title {
+                font-size: 2.8rem !important;
+            }
+            
+            .subtitle {
+                font-size: 1.4rem;
+            }
+            
+            .author-name {
+                font-size: 1.8rem;
+            }
+            
+            .cover-container {
+                padding: 25px;
+                margin: 20px;
+            }
+            
+            .intro-description {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
@@ -293,11 +389,22 @@
         <!-- Slide 1: Portada -->
         <div class="slide active">
             <div class="centered-content">
-                <h1>Posiciones Anatómicas</h1>
-                <div class="intro-icon">🏥</div>
-                <div class="intro-text">
-                    Conoce las <span class="highlight">principales posiciones</span> utilizadas en medicina 
-                    para optimizar procedimientos y mejorar la <span class="highlight">comodidad del paciente</span>
+                <div class="cover-container">
+                    <div class="medical-decoration">⚕️</div>
+                    <h1 class="main-title">Posiciones Anatómicas</h1>
+                    <div class="subtitle">Fundamentos en Práctica Médica</div>
+                    
+                    <div class="author-section">
+                        <div class="author-label">Presentado por:</div>
+                        <div class="author-name">Ingrid Pérez Andino</div>
+                    </div>
+                    
+                    <div class="intro-description">
+                        Conoce las <span class="highlight">principales posiciones</span> utilizadas en medicina 
+                        para optimizar procedimientos y mejorar la <span class="highlight">comodidad del paciente</span>
+                    </div>
+                    
+                    <div class="decorative-line"></div>
                 </div>
             </div>
         </div>
